@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+    margin: 1.5rem;
+    background-image: url(bg-pattern-top-desktop.svg) ,url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-position: right 52vw bottom 66vh , left 36vw top 30vh;
+    overflow: hidden;
+
+}
+main{
+    width: 1020px;
+
+}
+.container{
+    max-width: 100%;
+    
+}
+.container .head-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.head-2 .title{
+    width: 306px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 1.5rem;
+}
+.head-2 .p-1{
+    width: 380px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: var(--Dark-Grayish-Magenta);
+}
+.container .rate{
+    width: 400px;
+    align-content: flex-end;
+}
+.container .rate .rate-1{
+    display: flex;
+    background-color: var(--Light-Grayish-Magenta);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: .5rem;
+    width: 400px;
+}
+.container .rate .rate-1 .p-2{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+#rate-1-1{
+    margin-left: -90px;
+}
+#rate-2-1{
+    margin-left: -45px;
+}
+.container .avatar{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+}
+.avatar .smith ,.robert,.anne{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+
+}
+.avatar .smith .smith-1 ,.robert-1,.anne-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 260px;
+}
+.avatar img{
+    border-radius: 50%;
+    height: 45px;
+    margin-left: 75px;
+}
+.avatar .name{
+    margin-top: 13px;
+}
+.avatar .name .title{
+    color: var(--White);
+    font-size: 19px;
+    margin-left: 25px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+.avatar .name .p-3{
+    color: var(--Soft-Pink);
+    margin-left: 25px;
+    font-weight: 500;
+    padding: 0;
+    font-size: 18px;
+}
+.avatar p{
+    color: var(--White);
+    line-height: 1.5;
+    width: 260px;
+    margin-bottom: 0.7rem;
+}
+.avatar .robert{
+    margin-top: 30px;
+}
+.avatar .anne{
+    margin-top: 60px;
+}
+@media (max-width:425px){
+    main{
+        width: 300px;
+    }
+    body{
+        background-image: url(bg-pattern-top-mobile.svg) ,url(bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-position: top 0 left 0 ,right 0 bottom 85px;
+        overflow: auto;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .container .head-1{
+        flex-direction: column;
+    }
+    .container .avatar{
+        grid-template-columns: 1fr;
+    }
+    .head-2 .title{
+        font-size: 40px;
+        text-align: center;
+        width: 260px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .head-2 .p-1{
+        text-align: center;
+        width: 280px;
+    }
+    #rate-1-1{
+        margin-left: auto;
+    }
+    #rate-2-1{
+        margin-left: auto;
+    }
+    .container .rate{
+        max-width: 100%;
+    } 
+    .container .rate-1{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .container .rate-1 .star{
+        margin-bottom:10px;
+    }
+    .avatar .smith ,.robert,.anne{
+        margin-top: 20px;
+        width: 100%;
+        margin-left: -5px;
+    }
+    .avatar{
+        width: 100%;
+    }
+    .avatar .robert{
+        margin-top: 0;
+    }
+    .avatar .anne{
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
